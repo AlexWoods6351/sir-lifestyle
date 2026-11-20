@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watches — SIR Lifestyle</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-img-link"><img src="logo.jpg" alt="SIR Lifestyle" class="nav-logo"/></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#offers">Offers</a></li>
+        <li><a href="watches.html">Watches</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li><a href="perfumes.html">Perfumes</a></li>
+        <li><a href="index.html#deals">Deals</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn" id="cartBtn" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="search-inner">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search watches…" />
+        <button id="searchClose"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero watches-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Watches</span>
+      </div>
+      <h1><i class="fa-regular fa-clock"></i> Watches</h1>
+      <p>From precision sport watches to heritage dress pieces</p>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="container">
+      <div class="page-toolbar">
+        <p class="result-count" id="resultCount">Showing all products</p>
+        <div class="sort-wrap">
+          <label>Sort by:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="default">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-img-link"><img src="logo.jpg" alt="SIR Lifestyle" class="nav-logo"/></a>
+          <p>Premium products, delivered with passion.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="gadgets.html">Gadgets</a></li>
+            <li><a href="perfumes.html">Perfumes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SIR Lifestyle. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-primary full-width">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-check-circle"></i><span id="toastMsg">Added!</span></div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('categoryGrid');
+      const pageProducts = products.filter(p => p.category === 'watches');
+      let displayed = [...pageProducts];
+
+      function render(list) {
+        grid.innerHTML = '';
+        list.forEach(p => createProductCard(p, grid));
+        document.getElementById('resultCount').textContent = `Showing ${list.length} product${list.length !== 1 ? 's' : ''}`;
+        initScrollAnimations();
+      }
+
+      render(displayed);
+
+      document.getElementById('sortSelect').addEventListener('change', (e) => {
+        const val = e.target.value;
+        let sorted = [...pageProducts];
+        if (val === 'price-asc')  sorted.sort((a,b) => a.price - b.price);
+        if (val === 'price-desc') sorted.sort((a,b) => b.price - a.price);
+        if (val === 'rating')     sorted.sort((a,b) => b.stars - a.stars || b.reviews - a.reviews);
+        render(sorted);
+      });
+
+      document.getElementById('searchInput').addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase();
+        const filtered = pageProducts.filter(p =>
+          p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q)
+        );
+        render(filtered);
+      });
+    });
+  </script>
+</body>
+</html>
