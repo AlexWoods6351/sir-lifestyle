@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIR Lifestyle — Premium Store</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-img-link"><img src="logo.jpg" alt="SIR Lifestyle" class="nav-logo"/></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="watches.html">Watches</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li><a href="perfumes.html">Perfumes</a></li>
+        <li><a href="#deals">Deals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn" id="cartBtn" title="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-inner">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search for watches, gadgets, perfumes…" />
+        <button id="searchClose"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-shape shape1"></div>
+      <div class="hero-shape shape2"></div>
+      <div class="hero-shape shape3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-label">New Collection 2025</span>
+      <h1>Elevate Your <br/><span class="gradient-text">Everyday Style</span></h1>
+      <p>Premium watches, cutting-edge gadgets, and signature fragrances — curated for those who demand the best.</p>
+      <div class="hero-btns">
+        <a href="#offers" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="watches.html" class="btn btn-outline">Explore Watches</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>12K+</strong><span>Happy Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>500+</strong><span>Premium Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>4.9★</strong><span>Average Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-wrap">
+        <a href="watches.html" class="floating-card card-watch">
+          <i class="fa-regular fa-clock"></i>
+          <span>Watches</span>
+        </a>
+        <a href="gadgets.html" class="floating-card card-gadget">
+          <i class="fa-solid fa-headphones"></i>
+          <span>Gadgets</span>
+        </a>
+        <a href="perfumes.html" class="floating-card card-perfume">
+          <i class="fa-solid fa-spray-can-sparkles"></i>
+          <span>Perfumes</span>
+        </a>
+        <div class="hero-circle">
+          <span>SIR</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE BANNER -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>FREE SHIPPING OVER $99</span><span class="dot">•</span>
+      <span>NEW ARRIVALS EVERY WEEK</span><span class="dot">•</span>
+      <span>LUXURY WATCHES IN STOCK</span><span class="dot">•</span>
+      <span>EXCLUSIVE FRAGRANCES</span><span class="dot">•</span>
+      <span>LATEST TECH GADGETS</span><span class="dot">•</span>
+      <span>FREE RETURNS — 30 DAYS</span><span class="dot">•</span>
+      <span>FREE SHIPPING OVER $99</span><span class="dot">•</span>
+      <span>NEW ARRIVALS EVERY WEEK</span><span class="dot">•</span>
+      <span>LUXURY WATCHES IN STOCK</span><span class="dot">•</span>
+      <span>EXCLUSIVE FRAGRANCES</span><span class="dot">•</span>
+      <span>LATEST TECH GADGETS</span><span class="dot">•</span>
+      <span>FREE RETURNS — 30 DAYS</span><span class="dot">•</span>
+    </div>
+  </div>
+
+  <!-- SHOP BY CATEGORY -->
+  <section class="section category-browse">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Browse</span>
+        <h2>Shop by Category</h2>
+        <p>Explore our hand-curated collections</p>
+      </div>
+      <div class="category-cards">
+        <a href="watches.html" class="cat-card">
+          <div class="cat-img watches-bg">
+            <div class="cat-placeholder">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Watches</h3>
+            <p>12 products</p>
+            <span class="cat-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="gadgets.html" class="cat-card">
+          <div class="cat-img gadgets-bg">
+            <div class="cat-placeholder">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Gadgets</h3>
+            <p>12 products</p>
+            <span class="cat-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="perfumes.html" class="cat-card">
+          <div class="cat-img perfumes-bg">
+            <div class="cat-placeholder">
+              <i class="fa-solid fa-spray-can-sparkles"></i>
+            </div>
+          </div>
+          <div class="cat-info">
+            <h3>Perfumes</h3>
+            <p>12 products</p>
+            <span class="cat-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFERS (landing page items) -->
+  <section class="section offers-section" id="offers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">🔥 Hot Deals</span>
+        <h2>Special Offers</h2>
+        <p>Handpicked sale items across all categories — limited stock</p>
+      </div>
+      <div class="product-grid" id="offersGrid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS BANNER -->
+  <section class="deals-banner" id="deals">
+    <div class="container">
+      <div class="deals-inner">
+        <div class="deals-text">
+          <span class="section-label-light">Limited Time</span>
+          <h2>Flash Deals</h2>
+          <p>Up to <strong>40% off</strong> on selected items. Don't miss out.</p>
+          <a href="#offers" class="btn btn-white">Grab the Deal</a>
+        </div>
+        <div class="deals-countdown" id="countdown">
+          <div class="countdown-box"><span id="hours">08</span><label>Hours</label></div>
+          <div class="countdown-box"><span id="minutes">45</span><label>Minutes</label></div>
+          <div class="countdown-box"><span id="seconds">00</span><label>Seconds</label></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h4>Free Fast Shipping</h4>
+          <p>Free delivery on orders over $99, with express options available.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>2-Year Warranty</h4>
+          <p>All products come with a comprehensive two-year warranty.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <h4>30-Day Returns</h4>
+          <p>Not satisfied? Return it within 30 days, no questions asked.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+          <h4>24/7 Support</h4>
+          <p>Our support team is always here to help you, day or night.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>We'd love to hear from you</h3>
+          <p>Have a question about a product or need help with an order? Reach out and we'll get back to you within 24 hours.</p>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>support@sirlifestyle.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1 (800) 283-4910</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>42 Luxury Ave, New York, NY 10001</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Your message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-img-link"><img src="logo.jpg" alt="SIR Lifestyle" class="nav-logo"/></a>
+          <p>Premium products, delivered with passion. Elevate your lifestyle with SIR Lifestyle.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="gadgets.html">Gadgets</a></li>
+            <li><a href="perfumes.html">Perfumes</a></li>
+            <li><a href="#deals">Deals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SIR Lifestyle. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p>Your cart is empty</p>
+        <a href="#offers" class="btn btn-primary" id="shopNowBtn">Shop Now</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn btn-primary full-width">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </aside>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-check-circle"></i>
+    <span id="toastMsg">Added to cart!</span>
+  </div>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Render offer items on homepage (sale-badged products from all categories)
+    document.addEventListener('DOMContentLoaded', () => {
+      const offerProducts = products.filter(p => p.badge === 'sale' || p.badge === 'hot');
+      const grid = document.getElementById('offersGrid');
+      offerProducts.forEach(p => createProductCard(p, grid));
+    });
+  </script>
+</body>
+</html>
